@@ -15,9 +15,9 @@ Dload_start=${START_S}
 Dload_end=${END_S}
 
 while [ "${Dload_start}" -le "${Dload_end}" ];do
-    statDate=`date -d @${Dload_start} +"%Y%j"`
+    startDate=`date -d @${Dload_start} +"%Y%j"`
     Dload_start=$((Dload_start+86400))
-    echo $statDate
+    echo $startDate
     #wget -c ...........................
 done
 
